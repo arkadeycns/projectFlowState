@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "firebaseui": "^6.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "jsrsasign": "^11.1.0",
+    "package_name": "^1.0.2"
+  }
+}

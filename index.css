@@ -1,0 +1,329 @@
+body{
+    background-color: rgb(7, 90, 94);
+}
+#header{
+    background-color: rgba(0, 67, 70, 0.655);
+    position: absolute;
+    height: 40px;
+    top: 0%;
+    right: 0%;
+    width: 1540px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#welbox{
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 600px;
+    width: 1400px;
+    border-radius: 30px;
+    transform: translate(-50%,-50%);
+}
+#logbox{
+    background-color:  rgba(20, 209, 161, 0.571);
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    height: 500px;
+    width: 400px;
+    border-radius: 30px;
+    transform: translate(-50%,-50%);
+}
+#logo{
+    color: white;
+    font-family: "Poppins";
+    position: absolute;
+    left: 0.6%;
+    top: 0.6%;
+    height: 50px;
+    width: 180px;
+    font-size: xx-large;
+    
+    
+}
+
+.oswald{
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.indie-flower-regular {
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+#weltext{
+    color: rgb(0, 66, 70);
+    position: absolute;
+    left: 35%;
+    top: 30%;
+    height: 500px;
+    width: 600px;
+    text-align: center;
+    font-size: 35px;
+    font-family: "Poppins";
+    font-weight: 500;
+    
+}
+.sacramento-regular {
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+#form_content_inner_container {
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+
+}
+
+input {
+    width: 100%;
+    height: 40px;
+
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: white;
+    font-family: "Poppins";
+    font-weight: 500;
+    color: black;
+    font-size: 18px;
+
+}
+
+textarea {
+    width: 100%;
+    height: 40px;
+
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: white;
+    font-family: "Poppins";
+    font-weight: 500;
+    color: black;
+    font-size: 18px;
+
+}
+
+
+#button_container {
+    width: 400px;
+    height: 10%;
+    color:white;
+    
+    margin-top: 5px;
+    
+}
+
+#button_container button {
+    width: 155px;
+    height: 100%;
+    float: left;
+    color: black;
+    background: white;
+    border-radius: 15px;
+    margin-right:5px ;
+    font-family: "Poppins";
+    
+    font-weight: 900;
+    font-size: 18px;
+
+    cursor: pointer;
+
+    
+    justify-content: center;
+    align-items: center;
+} 
+
+#grap{
+    position: absolute;
+    top: 60%;
+    right: 6%;
+    transform: translate(0%, -50%);
+    height: 400px;
+}
+#logout{
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    background-color: transparent;
+    height: 40px;
+    width: 80px;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    font-family: "Poppins";
+    border-radius: 10px;
+    border-width: 3px;
+}
+
+#MainBox{
+    position: absolute;
+    
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(20, 209, 162, 0.34);
+    
+
+}
+#TaskBox{
+    position: relative;
+    border-radius: 30px;
+    height: 680px;
+    width: 300px;
+    top: 4%;
+    left: 1%;
+    background-color: white;
+    
+}
+#TaskBox_specific{
+    position: absolute;
+    border-radius: 30px;
+    height: 680px;
+    width: 900px;
+    top: 4%;
+    left: 22%;
+    background-color: white;
+    
+    
+    
+}
+#grap2{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 400px;
+    width: auto;
+   
+    mix-blend-mode: multiply ;
+}
+#list_head{
+    position: relative;
+    color: black;
+    font-family: "Poppins";
+    font-size: larger;
+    left: 30%;
+}
+#create_task_container{
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    width: 250px;
+}
+#task_description{
+    height: 300px;
+    resize: none;
+    width: 250px;
+    border-radius: 10px;
+}
+#task_button{
+    height: 50px;
+    width: 100px;
+    border-radius:10px ;
+    font-family: "Poppins";
+    
+}
+#Show_task{
+    position: relative;
+    left: 2%;
+    top: 3%;
+    border-radius: 5px;
+    font-family: "Poppins";
+    
+}
+#task_list{
+    position: relative;
+    left: 2%;
+    top: 5%;
+    font-family: "Poppins";
+    font-size: x-large;
+}
+ul  span{
+    position: absolute;
+    left: 80%;
+    font-weight: bolder;
+   
+}
+ul li{
+    width: 600px;
+    font-size: medium;
+}
+.checked {
+    text-decoration: line-through;
+  }
+#google_signin{
+    position: relative;
+    left: 19%;
+    top: 150%;
+}
+#google_image{
+    position: relative;
+    height: 40px;
+    width: auto;
+    
+}
+#anonymous_signin{
+    position: relative;
+    left: -21%;
+    top: 260%;
+}
+.rubik-gemstones-regular {
+    font-family: "Rubik Gemstones", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+#logo{
+    font-family: "Poppins";
+    font-size: x-large;
+    font-weight: 700;
+}  
+#logo_img{
+    position: absolute;
+    left: -3%;
+    height: 40px;
+    width: 140px;
+    mix-blend-mode: multiply;
+    opacity: 0.5;
+    border-bottom-left-radius: 13px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+#contact{
+    font-family: "Poppins";
+    position: absolute;
+    color: white;
+    right: 10%;
+    top: 10%;
+}
+#contact:hover{
+    cursor: pointer;
+}
+#about{
+    font-family: "Poppins";
+    position: absolute;
+    color: white;
+    right: 5%;
+    top: 10%;
+}
+#about:hover{
+    cursor: pointer;
+}

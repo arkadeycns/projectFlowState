@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow State - ToDoList </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Gemstones&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Oswald:wght@200..700&family=Poppins:wght@400;500;600&family=Rock+3D&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id = "login_content">
+        <div id="header">
+            <div id="logo">Flow State
+                <img id="logo_img" src="logo.png" alt="">
+            </div>
+            <div id ="contact" onclick="contact()">Contact</div>
+            <div id="about" onclick="about()">About</div>
+        </div>
+        <div id="welbox"></div>
+        <img src="graphic.jpg" id="grap" alt="">
+        <div id="logbox">
+            <div id="form_content_inner_container">
+                <input type="text" id="full_name" placeholder="Full name">
+                <input type="email" id="email" placeholder="Email">
+                <input type="password" id="password" placeholder="New Password">
+
+                
+                <div id="button_container">
+                    <button onclick="login()">Login</button>
+                    <button onclick="register()">Register</button>
+                    <button onclick="google_signin()" id="google_signin">
+                        <img src="google icon.png" id="google_image" alt=""></button>
+                    <button onclick="anonymous_signin()" id="anonymous_signin">Guest</button>
+                </div>
+
+            </div>
+        </div>
+        <!-- <div id="logo">Flow State</div> -->
+        <div id="weltext">Organize your work and life, finally. <br> 
+        <strong> <big> Introducing Flow State</big> </strong><br>
+        The To-Do list app you need in your life  </div>
+    </div>    
+    <div id = "main_content">
+        
+        <div id="MainBox">
+            <button id="logout" onclick="logout()">Logout</button>
+            <div id="TaskBox">
+                <div id="list_head">Create Task</div>
+            </div>
+            <div id="TaskBox_specific">
+                <button id="Show_task" onclick="showtasks()">Show Tasks</button>
+                <ul id="task_list"></ul>
+                
+
+                </div>
+            </div>
+            <img id="grap2" src="grap2.png" alt="">
+            <div id="create_task_container">
+                <input  id="task" placeholder="Task" >
+                <input  id="task_priority" placeholder="Enter priority">
+                <input  id="task_duedate" placeholder="Enter Due Date">
+                <textarea  id="task_description" placeholder="Enter Details"></textarea>
+                <button id="task_button" onclick="createTask()">Create</button>
+        </div>
+    </div>
+</body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    <!-- Our script must be loaded after firebase references -->
+    <script src="index.js"></script>
+</html>
