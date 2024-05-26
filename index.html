@@ -9,12 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Gemstones&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Oswald:wght@200..700&family=Poppins:wght@400;500;600&family=Rock+3D&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shepherd.js@9.1.1/dist/css/shepherd.css">
 </head>
+
 <body>
     <div id = "login_content">
         <div id="header">
             <div id="logo">Flow State
-                <img id="logo_img" src="logo.png" alt="">
+                
             </div>
             <div id ="contact" onclick="contact()">Contact</div>
             <div id="about" onclick="about()">About</div>
@@ -77,4 +79,86 @@
 
     <!-- Our script must be loaded after firebase references -->
     <script src="index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/shepherd.js@9.1.1/dist/js/shepherd.min.js"></script>
+
+
+
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const tour = new Shepherd.Tour({
+            defaultStepOptions: {
+                cancelIcon: {
+                    enabled: true
+                },
+                classes: 'shepherd-theme-arrows',
+                scrollTo: { behavior: 'smooth', block: 'center' }
+            },
+            useModalOverlay: false
+        });
+
+        tour.addStep({
+            title: 'Welcome to My To-Do app!',
+            text: 'Get ready for the most amazing to-do application.',
+            attachTo: {
+                element: '#weltext',
+                on: 'top'
+            },
+            buttons: [
+                {
+                    text: 'Next',
+                    action: tour.next
+                }
+            ]
+        });
+
+        tour.addStep({
+            title: 'Login',
+            text: 'Click this button to login and start to-doing.',
+            attachTo: {
+                element: '#button_container',
+                on: 'right'
+            },
+            buttons: [
+                {
+                    text: 'Back',
+                    action: tour.back
+                },
+                {
+                    text: 'Next',
+                    action: tour.next
+                }
+            ]
+        });
+
+        tour.addStep({
+            title: 'For more help',
+            text: 'Here you can find our contact information.',
+            attachTo: {
+                element: '#contact',
+                on: 'top'
+            },
+            buttons: [
+                {
+                    text: 'Back',
+                    action: tour.back
+                },
+                {
+                    text: 'Finish',
+                    action: tour.complete
+                }
+            ]
+        });
+
+        tour.start();
+    });
+    </script>
+
+
+
+
+
+
+
 </html>
